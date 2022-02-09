@@ -34,19 +34,20 @@ pipeline {
 		}
 		stage("deploy") {
 			steps {
+                echo "${env.GIT_BRANCH}"
 				echo 'deploying the applicaiton...'
 			}
 		}
 	}
-	post {
-			always {
-				echo 'building..'
-			}
-			success {
-	            echo 'success'
-			}
-			failure {
-	            echo 'failure'
-			}
-		}
-	}
+    post {
+            always {
+                echo 'building..'
+            }
+            success {
+                echo 'success'
+            }
+            failure {
+                echo 'failure'
+            }
+        }
+    }
