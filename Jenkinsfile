@@ -18,6 +18,7 @@ pipeline {
 		}
 	}
 }
+<<<<<<< HEAD:jenkinsfile
 
 pipeline {
 	agent any
@@ -51,3 +52,5 @@ pipeline {
             }
         }
     }
+=======
+>>>>>>> f947260e2444d8ef410b316476f1c4bc4794e051:Jenkinsfile
