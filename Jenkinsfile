@@ -91,7 +91,7 @@ pipeline {
 	agent any
 	environment {
 		NEW_VERSION = '1.0.0'
-		ADMIN_CREDENTIALS = credentials('admin_user_credentials')
+		ADMIN_CREDENTIALS = credentials('admin')
 	}
 	stages {
 		stage("build") {
