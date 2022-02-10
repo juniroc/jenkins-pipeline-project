@@ -1,2 +1,2 @@
 fastapi
-uvicorn
+uvicorn  ## 서버를 띄워주는 역할 
